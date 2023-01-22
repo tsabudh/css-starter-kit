@@ -59,6 +59,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 4rem;
+  cursor: pointer;
   @include media-breakpoint-up(md) {
     flex-direction: row;
     margin-bottom: 8rem;
@@ -118,10 +119,15 @@
     position: relative;
 
     & .search-icon {
+      appearance: none;
+      border: none;
+      padding: 0;
+      background-color: transparent;
       display: inline-block;
       position: absolute;
-      top: 2rem;
-      right: 2rem;
+      top: 50%;
+      right: 0;
+      transform: translate(-85%, -50%);
       width: 2.4rem;
       height: 2.4rem;
       margin-left: -20px;

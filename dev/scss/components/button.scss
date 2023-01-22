@@ -32,6 +32,10 @@ border-color: $color-blue-off;
     border: 2px solid white;
     overflow: hidden;
     // max-width: 11.8rem;
+    &:hover{
+      color: white;
+      background-color: $color-dark;
+    }
   }
 
   &--blue-white {
@@ -39,5 +43,10 @@ border-color: $color-blue-off;
     color: white;
     border: 1px solid white;
     overflow: hidden;
+
+    &:hover{
+      background-color: $color-dark;
+      color: white;
+    }
   }
 }
