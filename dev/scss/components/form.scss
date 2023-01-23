@@ -26,7 +26,13 @@
       outline: none;
       padding: 1.6rem;
 
-      font-style: italic;
+      // font-style: italic;
+      &:invalid{
+        border: 2px solid rgb(255, 60, 0);
+      }
+      &:placeholder-shown {
+        border: 2px solid rgb(8, 0, 0);
+      }
 
       &::placeholder,
       &::-moz-placeholder,
