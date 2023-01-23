@@ -20368,6 +20368,7 @@ a.inline-link {
 }
 .header .nav-toggle-icon {
   display: inline-block;
+  cursor: pointer;
 }
 @media (min-width: 1100px) {
   .header .join-us-now {
@@ -20376,6 +20377,7 @@ a.inline-link {
 }
 
 .header--side {
+  padding: 0;
   background: #114e60;
   z-index: 10;
   color: white;
@@ -20392,11 +20394,17 @@ a.inline-link {
   overflow-y: hidden;
 }
 .header--side .sidenav {
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding-left: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  flex-direction: column;
+  height: 100%;
 }
 .header--side .wrapper {
+  width: 100%;
   align-self: flex-start;
+  padding: 3.6rem 2.4rem;
+  border: 1px solid #F5CEBE;
 }
 .header--side.offcanvas-visible {
   height: fit-content;
